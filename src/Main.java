@@ -24,19 +24,23 @@ public class Main {
                 if (clientDeviceYear >= 2015) {
                     System.out.println("Установите версию приложения для iOS по ссылке");
                 }
-                else System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                else {
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                }
                 break;
             case 1:
                 if (clientDeviceYear >= 2015) {
                     System.out.println("Установите версию приложения для Android по ссылке");
                 }
-                else System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                else {
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                }
                 break;
         }
 
         // task 3: leap year
         System.out.println("task 3");
-        int year = 2100;
+        int year = 400;
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным");
         }
@@ -49,9 +53,9 @@ public class Main {
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: 1");
         }
-        else
-            System.out.println("Потребуется дней: "+ days);
-
+        else {
+            System.out.println("Потребуется дней: " + days);
+        }
         // task 5: season
         System.out.println("task 5");
         int monthNumber = 23;
